@@ -48,7 +48,7 @@ function uploadEntry() {
   getAll.onsuccess = function () {
     // if there's data in the idb, send it to the api
     if (getAll.result.length > 0) {
-      fetch("/api/entries/bulk", {
+      fetch("/api/entries", {
         method: "POST",
         body: JSON.stringify(getAll.result),
         headers: {

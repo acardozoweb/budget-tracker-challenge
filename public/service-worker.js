@@ -19,7 +19,7 @@ const FILED_TO_CACHE = [
 ];
 
 
-// install service worker
+// install service worker, cache resources
 self.addEventListener("install", function (e) {
     e.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
