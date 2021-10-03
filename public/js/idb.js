@@ -48,7 +48,7 @@ function uploadEntry() {
   getAll.onsuccess = function () {
     // if there's data in the idb, send it to the api
     if (getAll.result.length > 0) {
-      fetch("/api/entries", {
+      fetch("/api/transaction/bulk", {
         method: "POST",
         body: JSON.stringify(getAll.result),
         headers: {
@@ -68,7 +68,7 @@ function uploadEntry() {
           // clear the store
           budgetObjectStore.clear();
 
-          alert("All saved entries have been submitted!");
+          alert("Saved entries have been submitted!");
         })
         .catch((err) => {
           console.log(err);
