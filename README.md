@@ -2,6 +2,8 @@
 
 # Description
 
+This is a progressive web app (PWA) designed to allow the user to track deposits and expenses, regardless of a stable internet connection. Starter code provided by Trilogy Education Services, as part of a challenge assignment in Carleton Universty's full-stack web dev boot camp. 
+
 # Table of Contents
 
 * [Installation](*installation)
